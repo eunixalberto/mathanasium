@@ -6,7 +6,7 @@
       ],
       "main": true
     },
-    "child-style.min.css": {
+    "child-style.css": {
       "files": [
         "styles/themestyle.scss"
       ],
