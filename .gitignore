@@ -7,13 +7,13 @@
 
 # Webroot #
 ###########
-!web/
-web/*
+#!web/
+#web/*
 !web/index.php
 !web/wp-cli.yml
 !web/wp-config.php
-!web/wp-content/
-web/wp-content/*
+#!web/wp-content/
+#web/wp-content/*
 !web/wp-content/mu-plugins/
 web/wp-content/mu-plugins/*
 !web/wp-content/mu-plugins/custom
@@ -22,8 +22,8 @@ web/wp-content/mu-plugins/*
 web/wp-content/plugins/*
 !web/wp-content/plugins/custom/
 !web/wp-content/plugins/.gitkeep
-!web/wp-content/themes
-web/wp-content/themes/*
+#!web/wp-content/themes
+#web/wp-content/themes/*
 !web/wp-content/themes/custom/
 !web/wp-content/themes/.gitkeep
 !web/wp-content/config/
@@ -40,6 +40,11 @@ web/private/scripts/quicksilver
 
 .localnotes
 web/wp-config.php
+web/wp-content/themes/bootstrapfast
+web/wp-content/themes/twentyseventeen
+web/wp-content/themes/mathanasium/bower_components
+web/wp-content/themes/mathanasium/node_modules
+
 
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
 
