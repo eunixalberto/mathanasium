@@ -1,0 +1,7 @@
+name: mathanasium
+recipe: pantheon
+config:
+  framework: wordpress
+  site: mathanasium
+  id: fca376e1-0a26-4d25-b24f-504e769762db
+  webroot: web
