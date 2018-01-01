@@ -27,7 +27,7 @@
     "wpackagist-plugin/simple-custom-admin": "^1.2",
     "wpackagist-plugin/responsive-slider-lite": "^1.1",
     "wpackagist-theme/twentyseventeen": "^1.1",
-    "wpackagist-theme/bootstrapfast": "^1.0.4"  
+    "wpackagist-theme/bootstrapfast": "^1.0.4"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master",
@@ -89,8 +89,10 @@
       "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "code-sniff": [
-        "./vendor/bin/phpcs --config-set installed_paths ~/example-wordpress-composer/vendor/wp-coding-standards/wpcs",
-        "./vendor/bin/phpcs --standard=WordPress ./web/wp-content"
+			"./vendor/bin/phpcs --config-set installed_paths ~/example_wordpress_composer/vendor/wp-coding-standards/wpcs/",
+      "./vendor/bin/phpcs --version",
+      "./vendor/bin/phpcs -i",
+      "./vendor/bin/phpcs --ignore=*/src/*,*/inc/*,*gulpfile.js*,*/assets/* --standard=WordPress ./web/wp-content/themes"
     ],
     "unit-test": [
       "./vendor/bin/phpunit tests/unit/*"
