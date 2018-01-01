@@ -28,7 +28,7 @@
     }
   },
   "config": {
-    "devUrl": "http://bootstrapfastdemo.lndo.site"
+    "devUrl": "http://mathanasium.lndo.site"
   },
 	"paths": {
 		"dist": "assets/",
