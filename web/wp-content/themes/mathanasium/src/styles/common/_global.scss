@@ -366,9 +366,86 @@ header#masthead {
 
 
 .headercontainer img {
-  width: 100%; }
+  width: 100%;
+}
 
 
 .sticky {
   background-color: #efefef;
   padding: 1%; }
+
+.container,
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+
+	.redset {
+		background-color: $redset;
+	}
+	.whiteset {
+		background-color: $whiteset;
+	}
+ }
+
+.container {
+	max-width: $containermaxwidth;
+}
+
+#main,
+#content.site-content {
+
+	padding-left: 0;
+	padding-right: 0;
+
+	.container-fluid {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.container-fluid {
+
+}
+
+.container-fluid > div{
+	float: left;
+}
+
+.rowidth6 {
+	width: 60%;
+}
+
+.rowidth4 {
+	width: 40%;
+}
+
+.rowidth10 {
+	width: 100%;
+}
+
+.rowidth1 {
+	width: 10%;
+}
+
+.rowidth2 {
+	width: 20%;
+}
+
+.rowidth3 {
+	width: 30%;
+}
+.rowidth5 {
+	width: 50%;
+}
+
+.rowidth7 {
+	width: 70%;
+}
+
+.rowidth9 {
+	width: 90%;
+}
