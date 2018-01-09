@@ -50,6 +50,7 @@ web/wp-content/themes/bootstrapfast
 web/wp-content/themes/twentyseventeen
 web/wp-content/themes/mathanasium/bower_components
 web/wp-content/themes/mathanasium/node_modules
+node_modules
 
 
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
