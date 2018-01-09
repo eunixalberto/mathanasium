@@ -28,7 +28,7 @@
     }
   },
   "config": {
-    "devUrl": "http://mathanasium.lndo.site"
+    "devUrl": "https://mathanasium.lndo.site"
   },
 	"paths": {
 		"dist": "assets/",

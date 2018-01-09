@@ -1,0 +1,14 @@
+header#masthead {
+	background-color: $redset;
+	background-image: url(../images/headl2.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	min-height: 132px;
+}
+
+.site-description {
+	position: absolute;
+    left: 0;
+    background: $blackset;
+    color: $whiteset;
+}
