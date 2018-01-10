@@ -1,4 +1,78 @@
+.contactform {
 
+	.contact1 {
+		label {
+			width: 100%;
+		}
+
+		input,
+		select {
+			width: 73%;
+		    margin-left: 16%;
+			height: 38px;
+			font-family: 'AvenirCondensed' ;
+			font-size: 20px;
+			margin-bottom: 30px;
+			background-color: $whiteset;
+
+		}
+		input::placeholder,
+		select::placeholder,
+		select {
+			color: $inputboxtxt;
+			padding-left: 6px;
+		}
+	}
+
+	.contact2 {
+		label {
+			width: 100%;
+		}
+
+		input,
+		select {
+			width: 92%;
+		    margin-left: 0%;
+			height: 38px;
+			font-family: 'AvenirCondensed' ;
+			font-size: 20px;
+			margin-bottom: 30px;
+			background-color: $whiteset;
+
+		}
+		textarea {
+			width: 92%;
+			margin-left: 0%;
+			height: 184px;
+			font-family: 'AvenirCondensed' ;
+			font-size: 20px;
+		}
+
+		input::placeholder,
+		select::placeholder,
+		textarea,
+		select {
+			color: $inputboxtxt;
+			padding-left: 6px;
+		}
+	}
+
+	.rowidth4,
+	.rowidth10 {
+		float:left;
+	}
+
+	.rowidth10.butn{
+		input {
+			font-size: 19px;
+			background-color: $whiteset;
+			color: $redset;
+			font-weight: 900;
+    		font-family: 'AvenirBold';
+		}
+	}
+
+}
 
 button,
 input[type="button"],

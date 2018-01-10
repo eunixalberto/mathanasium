@@ -41,8 +41,119 @@
 	    letter-spacing: 2px;
 	}
 	h4 {
-		font-size: 5em;
-		font-family: AvenirMedium;
+		font-size: 4em;
+		font-family: AvenirCondensed;
+	    font-weight: 900;
 		text-transform: capitalize;
 	}
+	.rowidth5 {
+		float:left;
+	}
+
+}
+
+.testimonials {
+	background-image: url( '../images/mid2.jpg' );
+	background-position: center bottom;
+
+	margin-top: 40px;
+	font-size: 26px;
+
+	padding-bottom: 380px;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	.rowidth5 {
+		padding: 30px 40px 0px 40px;
+		margin-left: 2%;
+		width: 46%;
+	}
+	p {
+		margin-top: 10px;
+		font-style: italic;
+
+	}
+
+
+}
+
+.discover {
+	padding-bottom: 90px;
+	h5 {
+		color: $whiteset;
+		font-size: 64px;
+		letter-spacing: 2px;
+	}
+	.rowidth3 {
+		width: 30%;
+	    padding-left: 6%;
+	}
+	.discovertitle {
+		color: $whiteset;
+	    font-size: 22px;
+		margin: 20px 20px 20px;
+		font-weight: 900;
+		min-height: 70px;
+	}
+	.discovertitlelink {
+		a {
+			background: $whiteset;
+    		color: $redset;
+			padding: 10px 14px;
+			font-size: 16px;
+			font-family: AvenirBold;
+			font-weight: 900;
+			border: 1px solid $greyset;
+		}
+	}
+
+}
+
+.experts {
+
+	h6 {
+		color: $redset;
+		font-size: 64px;
+		font-family: AvenirCondensed;
+	}
+	.logolist {
+
+		margin-left: 10%;
+
+		.rowidth2 {
+			float: left;
+		}
+	}
+}
+
+.whiteset.rowlast {
+	position: absolute;
+	background-color: #ffffff00 ;
+	background: #ffffff00;
+}
+
+.rowlast {
+	a {
+		border: 1px solid #acacac;
+		color: $redset;
+		padding: 10px 25px;
+	    font-size: 20px;
+	    font-family: AvenirBold;
+	    letter-spacing: 2px;
+	}
+}
+
+footer {
+	.col-md-12 {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+
+		.footercontainer {
+			background-color: #ffffff63;
+			margin-top: -100px;
+		}
+	}
+
 }

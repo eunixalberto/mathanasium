@@ -110,7 +110,7 @@ get_header(); ?>
 				?>
 				</div>
 
-				<div class="container-fluid greyset">
+				<div class="container-fluid greyset contactform">
 				<?php
 					if( have_rows('row_contactform') ) {
 						while ( have_rows('row_contactform') ) : the_row();
@@ -124,7 +124,7 @@ get_header(); ?>
 				?>
 				</div>
 
-				<div class="container-fluid whiteset">
+				<div class="container-fluid whiteset testimonials">
 				<?php
 					if( have_rows('row_testimonial') ) {
 						while ( have_rows('row_testimonial') ) : the_row
@@ -141,9 +141,9 @@ get_header(); ?>
 				?>
 				</div>
 
-				<div class="container-fluid redset">
-					<div class="discovertitle">
-						Discover More About Mathanasium
+				<div class="container-fluid redset discover">
+					<div class="rowidth10">
+						<h5>Discover More About Mathanasium</h5>
 					</div>
 				<?php
 					if( have_rows('row_discover') ) {
@@ -153,8 +153,12 @@ get_header(); ?>
 							<div class="rowidth3">
 								<?php $img = get_sub_field( "image" ); ?>
 								<?php echo '<img src="' . $img . '"/>' ; ?>
-								<?php the_sub_field('text'); ?>
-								<?php the_sub_field('url'); ?>
+								<div class="discovertitle">
+									<?php the_sub_field('text'); ?>
+								</div>
+								<div class="discovertitlelink">
+									<a href="<?php the_sub_field('url'); ?>">CLICK HERE FOR FRANCHISE INFO</a>
+								</div>
 							</div>
 							<?php
 						endwhile;
@@ -162,23 +166,39 @@ get_header(); ?>
 				?>
 				</div>
 
-				<div class="container-fluid redset">
-					<div class="discovertitle">
-						What the Experts Think
+				<div class="container-fluid whiteset experts">
+					<div class="rowidth10">
+						<h6>What the Experts Think</h6>
 					</div>
+					<div class="rowidth10 logolist">
+						<?php
+							if( have_rows('row_logos') ) {
+								while ( have_rows('row_logos') ) : the_row
+								();
+									?>
+									<div class="rowidth2">
+										<?php $img = get_sub_field( "image" ); ?>
+										<?php echo '<img src="' . $img . '"/>' ; ?>
+										<?php the_sub_field('text'); ?>
+										<?php the_sub_field('url'); ?>
+									</div>
+									<?php
+								endwhile;
+							}
+						?>
+					</div>
+				</div>
+
+				<div class="container-fluid whiteset rowlast">
 				<?php
-					if( have_rows('row_discover') ) {
-						while ( have_rows('row_discover') ) : the_row
-						();
+					if( have_rows('row_last') ) {
+						while ( have_rows('row_last') ) : the_row();
 							?>
-							<div class="rowidth3">
-								<?php $img = get_sub_field( "image" ); ?>
-								<?php echo '<img src="' . $img . '"/>' ; ?>
+							<div class="rowidth10">
 								<?php the_sub_field('text'); ?>
-								<?php the_sub_field('url'); ?>
 							</div>
 							<?php
-						endwhile;
+					    endwhile;
 					}
 				?>
 				</div>

@@ -36,6 +36,7 @@ body {
   margin: 0;
   background-color: #fff;
   font-family: Avenir, sans-serif;
+  font-size: 26px;
 }
 
 
@@ -246,9 +247,9 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: "Verdana", "Calibri", sans-serif;
-  font-size: 16px;
+  color: $blackset;
+  font-family: AvenirCondensed, "Verdana", "Calibri", sans-serif;
+  font-size: 26px;
   font-size: 1rem;
   line-height: 1.5; }
 
