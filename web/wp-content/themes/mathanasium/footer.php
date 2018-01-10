@@ -24,7 +24,7 @@
 							dynamic_sidebar( 'footer_bar' );
 						}
 					?>
-					<a href="#">RETURN TO TOP</a>
+					<a class="returntop" href="#">RETURN TO TOP</a>
 				</div>
 			</div><!-- .site-info -->
 		</div>
