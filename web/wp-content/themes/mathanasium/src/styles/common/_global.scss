@@ -1,15 +1,33 @@
-// @font-face {
-//   font-family: 'AvenirNext';
-//   src: url('webfont.eot'); /* IE9 Compat Modes */
-//   src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-//        url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
-//        url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-//        url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-//        url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-// }
+@font-face {
+  font-family: 'Avenir' ;
+  src: url( '../fonts/Avenir-Book.woff2' ) format('woff2'),
+       url( '../fonts/Avenir-Book.woff' ) format('woff'),
+       url( '../fonts/Avenir-Book.ttf' )  format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirCondensed' ;
+  src: url( '../fonts/AvenirNextCondensed-Regular.woff2' ) format('woff2'),
+       url( '../fonts/AvenirNextCondensed-Regular.woff' ) format('woff'),
+       url( '../fonts/AvenirNextCondensed-Regular.ttf' )  format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirMedium' ;
+  src: url( '../fonts/AvenirNextCondensed-Medium.woff2' ) format('woff2'),
+       url( '../fonts/AvenirNextCondensed-Medium.woff' ) format('woff'),
+       url( '../fonts/AvenirNextCondensed-Medium.ttf' )  format('truetype');
+}
+
+@font-face {
+  font-family: 'AvenirBold' ;
+  src: url( '../fonts/AvenirNextCondensed-Bold.woff2' ) format('woff2'),
+       url( '../fonts/AvenirNextCondensed-Bold.woff' ) format('woff'),
+       url( '../fonts/AvenirNextCondensed-Bold.ttf' )  format('truetype');
+}
 
 html {
-  font-family: sans-serif;
+  font-family: Avenir, sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -386,6 +404,9 @@ header#masthead {
 	}
 	.whiteset {
 		background-color: $whiteset;
+	}
+	.greyset {
+		background-color: $greyset;
 	}
  }
 

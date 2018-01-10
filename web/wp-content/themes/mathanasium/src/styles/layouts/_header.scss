@@ -1,15 +1,30 @@
 header#masthead {
 	background-color: $redset;
-	background-image: url(../images/headl2.png);
+	background-image: url(../images/head5.png);
 	background-position: right center;
 	background-repeat: no-repeat;
-	min-height: 132px;
+	border-bottom: 10px solid $blackset;
+	min-height: 136px;
 
-}
+	.custom-logo {
+		margin-left: 20px;
+		max-width: 284px;
+		margin-top: 14px;
+	}
 
-.site-description {
-	position: absolute;
-    left: 0;
-    background: $blackset;
-    color: $whiteset;
+	.site-description {
+		position: absolute;
+	    left: 0;
+	    background: $blackset;
+	    color: $whiteset;
+		top: 100px;
+	    min-height: 30px;
+	    min-width: 586px;
+		font-family: Avenir;
+		font-size: 19px;
+		font-weight: 900;
+		padding-left: 32px;
+		padding-top: 6px;
+		letter-spacing: 2px;
+	}
 }
