@@ -144,16 +144,51 @@
 }
 
 footer {
+
+	p.foot1 {
+		float: left;
+	}
+	p.foot2 {
+		margin-left: 100px;
+		float: left;
+	}
+	.foot3 {
+		float: right;
+	}
+
 	.col-md-12 {
 		padding-left: 0px;
 		padding-right: 0px;
 		margin-left: 0px;
 		margin-right: 0px;
+		font-family: Avenir;
+		letter-spacing: 1px;
 
 		.footercontainer {
 			background-color: #ffffff63;
-			margin-top: -100px;
+			margin-top: -160px;
+			color: #747779;
+			position: absolute;
+		    padding: 24px 54px;
+
+			p {
+				font-size: 20px;
+				font-family: AvenirBold;
+				margin-bottom: 10px;
+			}
+
 		}
+
+	}
+	.lastline {
+		display: block;
+		position: relative;
+		clear: both;
+		text-align: justify;
+		font-family: AvenirCondensed;
+		font-size: 16px;
+    	letter-spacing: 0px;
+    	line-height: 18px;
 	}
 
 }
