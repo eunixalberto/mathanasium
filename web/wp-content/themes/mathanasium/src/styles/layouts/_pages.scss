@@ -1,9 +1,14 @@
 .container-fluid {
 	text-align: center;
 
+	img {
+		width: 100%;
+	}
+
 	h2 {
 		font-family: AvenirMedium;
 	    font-size: 5.2em;
+		font-size: $responsivetitle1;
 	    font-weight: 500;
 	    letter-spacing: 0px;
 	}
@@ -13,18 +18,20 @@
 		margin-bottom: 30px;
 		p {
 			font-size: 26px;
+			font-size: $responsivetxt1;
 		    font-family: AvenirCondensed;
 		    color: #000;
 		    padding-top: 10px;
 		    padding-bottom: 10px;
-		    padding-left: 60px;
-		    padding-right: 60px;
+		    padding-left: 5%;
+		    padding-right: 5%;
 		    letter-spacing: 0px;
 		    text-align: justify;
 			margin: 0;
 		}
 		strong {
 			font-size: 26px;
+			font-size: $responsivetxt1;
 			font-family: AvenirBold;
 
 		}
@@ -39,12 +46,14 @@
 		text-transform: uppercase;
 	    font-weight: 900 !important;
 	    letter-spacing: 2px;
+		font-size: $h6txtsize;
 	}
 	h4 {
 		font-size: 4em;
 		font-family: AvenirCondensed;
 	    font-weight: 900;
 		text-transform: capitalize;
+		font-size: $inputboxheight;
 	}
 	.rowidth5 {
 		float:left;
@@ -71,7 +80,11 @@
 	p {
 		margin-top: 10px;
 		font-style: italic;
-
+		font-size: 2.05vw;
+		margin-top: 2vw;
+		text-align: justify;
+		letter-spacing: 1px;
+		line-height: 3.5vw;
 	}
 
 
@@ -83,6 +96,7 @@
 		color: $whiteset;
 		font-size: 64px;
 		letter-spacing: 2px;
+		font-size: $h6txtsize;
 	}
 	.rowidth3 {
 		width: 30%;
@@ -94,6 +108,9 @@
 		margin: 20px 20px 20px;
 		font-weight: 900;
 		min-height: 70px;
+		font-size: 1.8vw;
+		margin: 2vw;
+	    min-height: 5.5vw;
 	}
 	.discovertitlelink {
 		a {
@@ -104,6 +121,7 @@
 			font-family: AvenirBold;
 			font-weight: 900;
 			border: 1px solid $greyset;
+			font-size: 1.2vw;
 		}
 	}
 
@@ -115,13 +133,18 @@
 		color: $redset;
 		font-size: 64px;
 		font-family: AvenirCondensed;
+		font-size: $h6txtsize;
 	}
 	.logolist {
 
-		margin-left: 10%;
+		margin-left: 0;
 
-		.rowidth2 {
+		.rowidth25 {
 			float: left;
+
+			img {
+				padding: 0 10%;
+			}
 		}
 	}
 }
@@ -140,55 +163,9 @@
 	    font-size: 20px;
 	    font-family: AvenirBold;
 	    letter-spacing: 2px;
+		font-size: $inputboxtxt;
 	}
-}
-
-footer {
-
-	p.foot1 {
-		float: left;
+	.footerlogo {
+    	width: 40vw;
 	}
-	p.foot2 {
-		margin-left: 100px;
-		float: left;
-	}
-	.foot3 {
-		float: right;
-	}
-
-	.col-md-12 {
-		padding-left: 0px;
-		padding-right: 0px;
-		margin-left: 0px;
-		margin-right: 0px;
-		font-family: Avenir;
-		letter-spacing: 1px;
-
-		.footercontainer {
-			background-color: #ffffff63;
-			margin-top: -160px;
-			color: #747779;
-			position: absolute;
-		    padding: 24px 54px;
-
-			p {
-				font-size: 20px;
-				font-family: AvenirBold;
-				margin-bottom: 10px;
-			}
-
-		}
-
-	}
-	.lastline {
-		display: block;
-		position: relative;
-		clear: both;
-		text-align: justify;
-		font-family: AvenirCondensed;
-		font-size: 16px;
-    	letter-spacing: 0px;
-    	line-height: 18px;
-	}
-
 }

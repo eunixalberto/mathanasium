@@ -176,7 +176,7 @@ get_header(); ?>
 								while ( have_rows('row_logos') ) : the_row
 								();
 									?>
-									<div class="rowidth2">
+									<div class="rowidth25">
 										<?php $img = get_sub_field( "image" ); ?>
 										<?php echo '<img src="' . $img . '"/>' ; ?>
 										<?php the_sub_field('text'); ?>

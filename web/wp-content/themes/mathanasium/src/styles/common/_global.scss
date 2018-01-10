@@ -37,6 +37,7 @@ body {
   background-color: #fff;
   font-family: Avenir, sans-serif;
   font-size: 26px;
+  font-size: 1vw;
 }
 
 
@@ -250,6 +251,7 @@ textarea {
   color: $blackset;
   font-family: AvenirCondensed, "Verdana", "Calibri", sans-serif;
   font-size: 26px;
+  font-size: 1vw;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -259,7 +261,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 p {
-  margin-bottom: 1.5em; }
+    margin-bottom: 1.5em;
+    font-size: 1vw;
+ }
 
 
 dfn, cite, em, i {
@@ -412,7 +416,7 @@ header#masthead {
  }
 
 .container {
-	max-width: $containermaxwidth;
+	max-width: $containermaxwidth !important;
 }
 
 #main,
@@ -455,6 +459,10 @@ header#masthead {
 
 .rowidth2 {
 	width: 20%;
+}
+
+.rowidth25 {
+	width: 25%;
 }
 
 .rowidth3 {

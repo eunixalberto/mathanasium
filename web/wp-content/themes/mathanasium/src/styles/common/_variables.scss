@@ -2,7 +2,7 @@
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 $spacer:                10px;
-$containermaxwidth:     1000px;
+$containermaxwidth:     100%;
 
 // Colors
 $redset:                #ee3b33;
@@ -10,6 +10,16 @@ $whiteset:              #fff;
 $blackset:              #1b0706;
 $greyset:               #f0f0f0;
 
-$inputboxtxt:           #888686;
+$inputboxtxtcolor:      #888686;
 
 $bodyfontsize:          14px;
+
+$responsivemax:         100%;
+
+$responsivetxt1:        2.25vw;
+$responsivetitle1:      4vw;
+$basefontp:             1vw;
+
+$inputboxheight:        3vw;
+$inputboxtxt:           1.6vw;
+$h6txtsize:             5vw;

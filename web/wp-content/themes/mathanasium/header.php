@@ -38,10 +38,29 @@
 					}
 					?>
 				</div><!-- .site-branding -->
+
+				<div class="headersubimage"><?php
+					if( have_rows('header_elements') ) {
+						while ( have_rows('header_elements') ) : the_row();
+							$img1 = get_sub_field( "image" );
+							echo '<img src="' . $img1 . '"/>';
+						endwhile;
+					}
+					?>
+				</div>
+
 				<?php
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) { ?>
-						<p class="site-description"><?php echo esc_attr( $description ); ?></p>
+						<p class="site-description"><?php
+							if( have_rows('header_elements') ) {
+								while ( have_rows('header_elements') ) : the_row();
+									$title = get_sub_field( "text" );
+									echo $title;
+								endwhile;
+							}
+							?>
+						</p>
 						<?php
 					}
 				?>

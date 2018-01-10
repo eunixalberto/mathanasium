@@ -10,16 +10,19 @@
 			width: 73%;
 		    margin-left: 16%;
 			height: 38px;
+			height: $inputboxheight;
 			font-family: 'AvenirCondensed' ;
 			font-size: 20px;
+			font-size: $inputboxtxt;
 			margin-bottom: 30px;
+			margin-bottom: 1.4vw;
 			background-color: $whiteset;
 
 		}
 		input::placeholder,
 		select::placeholder,
 		select {
-			color: $inputboxtxt;
+			color: $inputboxtxtcolor;
 			padding-left: 6px;
 		}
 	}
@@ -34,9 +37,12 @@
 			width: 92%;
 		    margin-left: 0%;
 			height: 38px;
+			height: $inputboxheight;
 			font-family: 'AvenirCondensed' ;
 			font-size: 20px;
+			font-size: $inputboxtxt;
 			margin-bottom: 30px;
+			margin-bottom: 1.4vw;
 			background-color: $whiteset;
 
 		}
@@ -44,15 +50,17 @@
 			width: 92%;
 			margin-left: 0%;
 			height: 184px;
+			height: 12.5vw;
 			font-family: 'AvenirCondensed' ;
 			font-size: 20px;
+			font-size: $inputboxtxt;
 		}
 
 		input::placeholder,
 		select::placeholder,
 		textarea,
 		select {
-			color: $inputboxtxt;
+			color: $inputboxtxtcolor;
 			padding-left: 6px;
 		}
 	}
@@ -69,6 +77,7 @@
 			color: $redset;
 			font-weight: 900;
     		font-family: 'AvenirBold';
+			font-size: $inputboxtxt;
 		}
 	}
 
