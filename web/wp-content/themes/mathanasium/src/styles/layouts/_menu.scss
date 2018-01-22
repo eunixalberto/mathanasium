@@ -1,9 +1,26 @@
+.topfloatnav {
+	background: $blackset;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
 
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+
+	ul {
+
+		li {
+
+			a.selected {
+
+				color: $redset;
+			}
+		}
+	}
 }
 
 .main-navigation ul {
@@ -44,12 +61,32 @@
 .main-navigation li {
 	float: left;
 	position: relative;
-	width: 100%;
+	width: auto;
+
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	font-size: 2.4vw;
+	color: #fff;
+	margin: 1.8vw .5vw;
+	font-family: AvenirMedium;
+	border-right: 1px solid #fff;
+	line-height: 1.4vw;
+	padding-right: 1vw;
+}
+
+.main-navigation li:last-child a {
+	border-right: 0 solid black;
+}
+
+.main-navigation li::after {
+	border-right: 1px solid white;
+}
+
+.main-navigation li a::after {
+	border-right: 1px solid white;
 }
 
 .menu-toggle,
@@ -87,6 +124,7 @@
 
 	.main-navigation ul {
 		display: block;
+		float: right;
 	}
 }
 

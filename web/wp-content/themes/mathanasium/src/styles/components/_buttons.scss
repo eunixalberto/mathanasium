@@ -6,7 +6,8 @@
 		}
 
 		input,
-		select {
+		select,
+		textarea {
 			width: 73%;
 		    margin-left: 16%;
 			height: 38px;
@@ -21,7 +22,8 @@
 		}
 		input::placeholder,
 		select::placeholder,
-		select {
+		select,
+		textarea::placeholder {
 			color: $inputboxtxtcolor;
 			padding-left: 6px;
 		}

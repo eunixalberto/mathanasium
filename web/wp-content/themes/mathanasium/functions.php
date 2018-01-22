@@ -19,8 +19,13 @@ function bsft_theme_enqueue_styles() {
 		array( $parent_style )
 	);
 
+	wp_dequeue_script( 'bootstrapfastjs', 99999 );
+	wp_deregister_script( 'bootstrapfastjs', 99999 );
+
+	wp_enqueue_script( 'mathanasiumjs', get_stylesheet_directory_uri() . '/assets/js/themes.min.js', array(), bootstrapfast_stylesuffix(), true );
+
 }
-add_action( 'wp_enqueue_scripts', 'bsft_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'bsft_theme_enqueue_styles', 999999 );
 
 /**
  * Load VIP helper.
