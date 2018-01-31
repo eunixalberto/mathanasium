@@ -28,7 +28,7 @@
     }
   },
   "config": {
-    "devUrl": "http://qssmath.local"
+    "devUrl": "https://mathanasium.lndo.site"
   },
 	"paths": {
 		"dist": "assets/",
