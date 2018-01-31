@@ -5,10 +5,11 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package BootstrapFast
+ *
  */
 
 /**
- * [my_theme_enqueue_styles description]
+ * Load child styles and js.
  */
 function bsft_theme_enqueue_styles() {
 
@@ -23,7 +24,7 @@ function bsft_theme_enqueue_styles() {
 	wp_deregister_script( 'bootstrapfastjs', 99999 );
 
 	wp_enqueue_script( 'mathanasiumjs', get_stylesheet_directory_uri() . '/assets/js/themes.min.js', array(), bootstrapfast_stylesuffix(), true );
-
+[my_theme_enqueue_styles description]
 }
 add_action( 'wp_enqueue_scripts', 'bsft_theme_enqueue_styles', 999999 );
 
