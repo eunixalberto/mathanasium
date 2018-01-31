@@ -174,4 +174,15 @@
 	.footerlogo {
     	width: 40vw;
 	}
+	.rowidth10 {
+		p {
+			font-weight: 900;
+
+			a {
+				background-color: white;
+				color: $redset;
+				text-decoration: none;
+			}
+		}
+	}
 }
