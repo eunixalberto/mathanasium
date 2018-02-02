@@ -51,6 +51,7 @@ web/wp-content/themes/twentyseventeen
 web/wp-content/themes/mathanasium/bower_components
 web/wp-content/themes/mathanasium/node_modules
 node_modules
+wiki
 
 
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
@@ -76,6 +77,9 @@ web/wp-content/updraft/
 web/wp-content/backupwordpress-*/
 web/wp-content/managewp/backups/
 web/wp-content/advanced-cache.php
+
+
+
 web/wp-content/wp-cache-config.php
 web/sitemap.xml
 web/sitemap.xml.gz
@@ -122,3 +126,8 @@ Thumbs.db
 # SASS #
 ##########
 .sass-cache
+
+web/wp-content/themes/mathanasium/assets/
+
+web/wp-config*
+dev*.sh
