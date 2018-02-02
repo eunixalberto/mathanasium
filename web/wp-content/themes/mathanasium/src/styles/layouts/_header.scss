@@ -6,6 +6,10 @@ header#masthead {
 	height: 11vw;
 	position: relative;
 
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		height: 12vw !important;
+	}
+
 	.custom-logo {
 		margin-left: 3vw;
 	    margin-top: 1vw;
