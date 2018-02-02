@@ -2,7 +2,7 @@ header#masthead {
 	background-color: $redset;
 	background-position: right center;
 	background-repeat: no-repeat;
-	border-bottom: 10px solid $blackset;
+	border-bottom: 10px solid $darkblack;
 	height: 11vw;
 	position: relative;
 
@@ -15,17 +15,17 @@ header#masthead {
 	}
 
 	.site-description {
-		bottom: -7vw;
+		bottom: -8vw;
 		margin-bottom: 0;
 		position: relative;
-		left: -1.2vw;
-		background: #1b0706;
+		left: -2vw;
+		background: $darkblack;
 		color: #fff;
 		width: 52%;
 		font-family: Avenir;
 		font-size: 19px;
 		font-weight: 900;
-		padding-left: 3%;
+		padding-left: 4%;
 		padding-top: 6px;
 		padding-top: .4vw;
 		letter-spacing: 2px;

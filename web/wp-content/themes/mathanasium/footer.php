@@ -15,10 +15,13 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="footercontainer">
+					<?php $img = get_field( "footer_image" ); ?>
+					<?php // echo '<img src="' . $img . '"/>' ; ?>
+
 					<?php
-						if ( ! bootstrapfast_main_sidebar_placement() ) {
-							get_sidebar();
-						}
+						// if ( ! bootstrapfast_main_sidebar_placement() ) {
+						// 	get_sidebar();
+						// }
 
 						if ( is_active_sidebar( 'footer_bar' ) ) {
 							dynamic_sidebar( 'footer_bar' );

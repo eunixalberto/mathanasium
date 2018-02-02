@@ -30,11 +30,10 @@ footer {
 
 		.footercontainer {
 			background-color: #ffffff63;
-			margin-top: -160px;
-			margin-top: -14.2vw;
+			bottom: 0;
 			color: #747779;
+			padding: 24px 54px 0;
 			position: absolute;
-		    padding: 24px 54px;
 
 			p {
 				font-size: 20px;
@@ -60,16 +59,17 @@ footer {
 	}
 
 	.returntop {
-		padding-right: 40px;
 		background-repeat: no-repeat;
 		background-position: right 0px;
-		position: relative;
-		float: right;
+		background-size: 3vw;
 		color: black;
-		padding-top: 2px;
+		float: right;
 		font-size: .8vw;
+		margin-bottom: 1vw;
+		padding-right: 40px;
+		padding-top: 2px;
 	    padding-right: 3vw;
-	    background-size: 3vw;
+		position: relative;
 	}
 
 }

@@ -171,11 +171,50 @@ jQuery( document ).on(
 		// animated top scrolling.
 		jQuery( 'body, html' ).animate( {scrollTop: pos}, 500 );
 
-		jQuery( "#site-navigation li a" ).removeClass( "selected" );
+		// jQuery( "#site-navigation li a" ).removeClass( "selected" );
 
-		jQuery( this ).addClass( "selected" );
+		// jQuery( this ).addClass( "selected" );
 
 	}
 );
+
+jQuery(window).scroll(function(){
+	// This is then function used to detect if the element is scrolled into view
+	function elementScrolled(elem)
+	{
+		var docViewTop = jQuery(window).scrollTop();
+		var docViewBottom = docViewTop + jQuery(window).height();
+		var elemTop = jQuery(elem).offset().top;
+		return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+	}
+
+	function elementTriggered( elem ) {
+		var myString = elem;
+		var getthisClass = myString.substr(1);
+		var targetClass = '.' + getthisClass + ' a';
+
+		// console.log( targetClass );
+
+		jQuery( "#site-navigation li a" ).removeClass( "selected" );
+
+		jQuery( targetClass ).addClass( "selected" );
+		// url hash has issues here
+		// window.location.hash = elem;
+	}
+
+	var pageSections = [ "#aboutus", "#opportunity", "#nextsteps", "#testimonial", "#faq", "#awards" ];
+
+	for ( i = 0; i < pageSections.length; i++) {
+
+		if( elementScrolled( pageSections[i] ) ) {
+			// alert( pageSections[i] );
+
+			setTimeout(
+				elementTriggered( pageSections[i] ),
+				1000
+			);
+		}
+	}
+});
 
 // # sourceMappingURL=themes.js.map
