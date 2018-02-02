@@ -41,9 +41,24 @@
 			text-decoration: underline;
 			font-weight: 600;
 		}
+		table {
+			margin-top: 1vw;
+			td {
+				font-size: 2vw;
+			}
+			tr:nth-child( odd ) {
+				td {
+					color: $redset;
+				}
+			}
+
+		}
+
 	}
 
 }
+
+
 
 .greyset {
 	h3 {
