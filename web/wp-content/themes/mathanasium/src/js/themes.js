@@ -172,14 +172,18 @@ jQuery( document ).on(
 		jQuery( 'body, html' ).animate( {scrollTop: pos}, 500 );
 
 		// jQuery( "#site-navigation li a" ).removeClass( "selected" );
-
+        //
 		// jQuery( this ).addClass( "selected" );
 
 	}
 );
 
+/**
+ * This is then function used to detect if the element is scrolled into view
+ * @return {[type]} [description]
+ */
 jQuery(window).scroll(function(){
-	// This is then function used to detect if the element is scrolled into view
+
 	function elementScrolled(elem)
 	{
 		var docViewTop = jQuery(window).scrollTop();
@@ -193,7 +197,7 @@ jQuery(window).scroll(function(){
 		var getthisClass = myString.substr(1);
 		var targetClass = '.' + getthisClass + ' a';
 
-		// console.log( targetClass );
+		console.log( targetClass );
 
 		jQuery( "#site-navigation li a" ).removeClass( "selected" );
 
