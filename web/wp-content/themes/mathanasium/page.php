@@ -387,7 +387,7 @@ get_header(); ?>
 									<?php the_sub_field('text'); ?>
 								</div>
 								<div class="discovertitlelink">
-									<a href="<?php the_sub_field('url'); ?>">CLICK HERE FOR FRANCHISE INFO</a>
+									<a target="_blank" href="<?php the_sub_field('url'); ?>">CLICK HERE FOR FRANCHISE INFO</a>
 								</div>
 							</div>
 							<?php
@@ -407,7 +407,7 @@ get_header(); ?>
 								();
 									?>
 									<div class="rowidth25">
-										<a href="<?php echo the_sub_field('link'); ?>">
+										<a target="_blank" href="<?php echo the_sub_field('link'); ?>">
 											<?php $img = get_sub_field( "image" ); ?>
 											<?php echo '<img src="' . $img . '"/>' ; ?>
 										</a>
