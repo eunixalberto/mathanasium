@@ -387,7 +387,7 @@ get_header(); ?>
 									<?php the_sub_field('text'); ?>
 								</div>
 								<div class="discovertitlelink">
-									<a target="_blank" href="<?php the_sub_field('url'); ?>">CLICK HERE FOR FRANCHISE INFO</a>
+									<a target="_blank" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('btn_text'); ?></a>
 								</div>
 							</div>
 							<?php
