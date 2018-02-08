@@ -193,9 +193,15 @@ get_header(); ?>
 
 							</div>
 							<div class="rowidth10 butn">
-								<input type="submit" name="submit" value="RECIEVE FRANCHISE INFORMATION">
+								<input type="submit" name="submit" tabindex="20" value="RECIEVE FRANCHISE INFORMATION">
 							</div>
 						</form>
+						<script>
+							function thankyou() {
+								window.location.replace("//www.franchise.mathnasium.com/thank-you/");
+  								return false;
+							}
+						</script>
 					</div>
 
 				</div>
