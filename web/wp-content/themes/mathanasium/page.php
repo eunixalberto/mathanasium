@@ -123,9 +123,9 @@ get_header(); ?>
 						}
 					?>
 					<div class="rowidth10">
-						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
 							<input type=hidden name="oid" value="00D60000000K2UM">
-							<input type=hidden name="retURL" value="http://">
+							<input type=hidden name="retURL" value="http://www.franchise.mathnasium.com/thank-you/">
 							<!--  ----------------------------------------------------------------------  -->
 							<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
 							<!--  these lines if you wish to test in debug mode.                          -->
