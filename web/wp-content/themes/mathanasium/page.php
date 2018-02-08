@@ -138,7 +138,7 @@ get_header(); ?>
 
 								<label for="email"></label><input placeholder="Email" id="email" maxlength="80" name="email" size="20" type="text" tabindex="3" required/><br>
 
-								<label for="street"></label><input placeholder="Street" name="street" tabindex="5"><br>
+								<label for="street"></label><input placeholder="Street" id="street" maxlength="80" name="street" size="20" type="text" tabindex="5"><br>
 
 								<label for="state"></label><input placeholder="State/Province"  id="state" maxlength="20" name="state" size="20" type="text" tabindex="7"/><br>
 
