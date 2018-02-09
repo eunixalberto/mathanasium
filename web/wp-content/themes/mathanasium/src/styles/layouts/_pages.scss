@@ -201,3 +201,18 @@
 		}
 	}
 }
+
+.page-template-tpl-thankyou {
+	header#masthead .site-description {
+		display:none !important;
+	}
+	.entry-content {
+
+		position: relative;
+		margin: 1vw 3vw 20vw;
+
+		p {
+			font-size: 2vw;
+		}
+	}
+}
