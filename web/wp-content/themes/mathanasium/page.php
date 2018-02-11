@@ -14,6 +14,7 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) {
 				the_post();
+				global $wp;
 				?>
 
 				<div class="container-fluid redset">
@@ -182,7 +183,7 @@ get_header(); ?>
 								</select><br>
 								<!-- This field is a text field in the db, so I changed the html for it to be a drop down menu on the form including Scott's requested options-->
 
-								<input id="00N32000002pWwV" name="00N32000002pWwV" rows="3" placeholder="Lead Source Detail URL" type="hidden" wrap="soft" /><br>
+								<input id="00N32000002pWwV" name="00N32000002pWwV" rows="3" placeholder="Lead Source Detail URL" type="hidden" wrap="soft" value="<?php echo home_url( $wp->request ); ?>" /><br>
 
 								<input  id="00N32000002jCRi" maxlength="255" name="00N32000002jCRi" size="20" type="hidden" placeholder="UTM Campaign"/><br>
 
@@ -196,7 +197,7 @@ get_header(); ?>
 
 							</div>
 							<div class="rowidth10 butn">
-								<input type="submit" name="submit" tabindex="20" value="RECIEVE FRANCHISE INFORMATION">
+								<input type="submit" name="submit" tabindex="20" value="RECEIVE FRANCHISE INFORMATION">
 							</div>
 						</form>
 						<script>
