@@ -124,7 +124,7 @@ get_header(); ?>
 						}
 					?>
 					<div class="rowidth10">
-						<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" >
+						<form name="mathanasiumform" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return ValidateEmail(document.mathanasiumform.email)">
 							<input type=hidden name="oid" value="00D60000000K2UM">
 							<input type=hidden name="retURL" value="http://www.franchise.mathnasium.com/thank-you/">
 							<!--  ----------------------------------------------------------------------  -->
@@ -197,13 +197,25 @@ get_header(); ?>
 
 							</div>
 							<div class="rowidth10 butn">
-								<input type="submit" name="submit" tabindex="20" value="RECEIVE FRANCHISE INFORMATION">
+								<input type="submit" name="submit" tabindex="20" value="RECEIVE FRANCHISE INFORMATION" >
 							</div>
 						</form>
 						<script>
 							function thankyou() {
 								window.location.replace("//www.franchise.mathnasium.com/thank-you/");
   								return false;
+							}
+
+							function ValidateEmail(inputText) {
+								var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+								if(inputText.value.match(mailformat)) {
+									document.mathanasiumform.email.focus();
+									return true;
+								} else {
+									alert("You have entered an invalid email address!");
+									document.mathanasiumform.email.focus();
+									return false;
+								}
 							}
 						</script>
 					</div>
