@@ -183,17 +183,17 @@ get_header(); ?>
 								</select><br>
 								<!-- This field is a text field in the db, so I changed the html for it to be a drop down menu on the form including Scott's requested options-->
 
-								<input id="00N32000002pWwV" name="00N32000002pWwV" rows="3" placeholder="Lead Source Detail URL" type="hidden" wrap="soft" value="<?php echo home_url( $wp->request ); ?>" /><br>
+								<input id="00N32000002pWwV" name="00N32000002pWwV" rows="3" placeholder="Lead Source Detail URL" type="hidden" wrap="soft" value="<?php echo home_url( $wp->request ); ?>" />
 
-								<input  id="00N32000002jCRi" maxlength="255" name="00N32000002jCRi" size="20" type="hidden" placeholder="UTM Campaign"/><br>
+								<input  id="00N32000002jCRi" maxlength="255" name="00N32000002jCRi" size="20" type="hidden" placeholder="UTM Campaign"/>
 
-								<input  id="00N32000002jCRn" maxlength="255" name="00N32000002jCRn" size="20" type="hidden" placeholder="UTM Code"/><br>
+								<input  id="00N32000002jCRn" maxlength="255" name="00N32000002jCRn" size="20" type="hidden" placeholder="UTM Code"/>
 
-								<input  id="00N32000002jCRs" maxlength="255" name="00N32000002jCRs" size="20" type="hidden" placeholder="UTM Content"/><br>
+								<input  id="00N32000002jCRs" maxlength="255" name="00N32000002jCRs" size="20" type="hidden" placeholder="UTM Content"/>
 
-								<input  id="00N32000002jCRx" maxlength="255" name="00N32000002jCRx" size="20" type="hidden" placeholder="UTM Medium"/><br>
+								<input  id="00N32000002jCRx" maxlength="255" name="00N32000002jCRx" size="20" type="hidden" placeholder="UTM Medium"/>
 
-								<input  id="00N32000002jCS2" maxlength="255" name="00N32000002jCS2" size="20" type="hidden" placeholder="UTM Term"/><br>
+								<input  id="00N32000002jCS2" maxlength="255" name="00N32000002jCS2" size="20" type="hidden" placeholder="UTM Term"/>
 
 							</div>
 							<div class="rowidth10 butn">
@@ -203,7 +203,7 @@ get_header(); ?>
 						<script>
 							function thankyou() {
 								window.location.replace("//www.franchise.mathnasium.com/thank-you/");
-  								return false;
+								return false;
 							}
 
 							function ValidateEmail(inputText) {
@@ -228,7 +228,7 @@ get_header(); ?>
 						while ( have_rows('row_testimonial') ) : the_row
 						();
 							?>
-							<div class="rowidth5">
+							<div class="rowidth5 col-6">
 								<?php $img = get_sub_field( "image" ); ?>
 								<?php echo '<img src="' . $img . '"/>' ; ?>
 								<?php the_sub_field('testimonial'); ?>

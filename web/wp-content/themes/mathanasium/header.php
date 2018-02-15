@@ -15,11 +15,20 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+
+<style>
+	@supports (-ms-ime-align:auto) {
+		header#masthead .site-description {
+			bottom: -9vw !important;
+		}
+	}
+</style>
+
 </head>
 <body <?php body_class(); ?>>
 	<div class="container topfloatnav">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bootstrapfast' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'bootstrapfast' ); ?></button>
 			<?php
 
 			if ( is_page_template( 'templates/tpl-thankyou.php' ) ) {

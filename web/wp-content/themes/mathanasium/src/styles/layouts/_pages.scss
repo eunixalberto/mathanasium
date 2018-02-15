@@ -29,6 +29,19 @@
 		    text-align: justify;
 			margin: 0;
 		}
+
+		@include respond-to( mobile ) {
+			margin-top: 4%;
+			margin-bottom: 1%;
+
+			p {
+				font-size: $mobiletextsize;
+				& strong {
+					font-size: $mobiletextsize;
+				}
+			}
+		}
+
 		strong {
 			font-size: 26px;
 			font-size: $responsivetxt1;
@@ -36,26 +49,29 @@
 			font-weight: 600;
 
 		}
+
 		a {
 			color: #2d04e8;
 			text-decoration: underline;
 			font-weight: 600;
 		}
+
 		table {
 			margin-top: 1vw;
 			td {
 				font-size: 2vw;
+
+				@include respond-to( mobile ) {
+					font-size: $mobiletextsize;
+				}
 			}
 			tr:nth-child( odd ) {
 				td {
 					color: $redset;
 				}
 			}
-
 		}
-
 	}
-
 }
 
 
@@ -98,6 +114,15 @@
 		margin-left: 2%;
 		width: 46%;
 	}
+
+	@include respond-to( mobile ) {
+		padding-bottom: 38%;
+
+		.rowidth5 {
+			padding: 30px 1% 0px 1%;
+		}
+	}
+
 	p {
 		margin-top: 10px;
 		font-style: italic;
@@ -107,8 +132,6 @@
 		letter-spacing: 1px;
 		line-height: 3.5vw;
 	}
-
-
 }
 
 .discover {
@@ -136,13 +159,30 @@
 	.discovertitlelink {
 		a {
 			background: $whiteset;
-    		color: $redset;
+			color: $redset;
 			padding: 10px 14px;
 			font-size: 16px;
 			font-family: AvenirBold;
 			font-weight: 900;
 			border: 1px solid $greyset;
 			font-size: 1.2vw;
+		}
+	}
+	@include respond-to( mobile ) {
+
+		padding-bottom: 10%;
+
+		.discovertitlelink {
+
+			background: white;
+			border: 1px solid #f0f0f0;
+			width: 100%;
+
+			a {
+				padding: 6px 3px;
+				background: none;
+				border: none;
+			}
 		}
 	}
 
@@ -185,6 +225,11 @@
 	    font-family: AvenirBold;
 	    letter-spacing: 2px;
 		font-size: $inputboxtxt;
+
+		@include respond-to( mobile ) {
+			font-size: $mobiletextsize;
+		}
+
 	}
 	.footerlogo {
     	width: 40vw;

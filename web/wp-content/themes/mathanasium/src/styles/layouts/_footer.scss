@@ -40,6 +40,11 @@ footer {
 				font-size: $inputboxtxt;
 				font-family: AvenirBold;
 				margin-bottom: 10px;
+
+				@include respond-to( mobile ) {
+					display: block;
+					width: 100%;
+				}
 			}
 
 		}
@@ -56,6 +61,11 @@ footer {
     	line-height: 18px;
 		font-size: $inputboxtxt;
 		line-height: $inputboxtxt;
+
+		@include respond-to( mobile ) {
+			font-size: $mobiletextsize;
+			line-height: 3vw;
+		}
 	}
 
 	.returntop {
