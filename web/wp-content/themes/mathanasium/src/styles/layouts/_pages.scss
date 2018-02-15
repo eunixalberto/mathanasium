@@ -72,6 +72,33 @@
 			}
 		}
 	}
+
+	@include respond-to( mobile ) {
+		.experts {
+			.rowidth10 {
+				margin-top: 1%;
+			}
+		}
+
+		.rowlast {
+			.rowidth10 {
+				margin-top: 0;
+				P {
+					padding: 2%;
+				}
+
+				.footerlogo {
+					width: 23vw;
+				}
+				.alignnone {
+					margin: 0;
+				}
+
+			}
+
+		}
+	}
+
 }
 
 
