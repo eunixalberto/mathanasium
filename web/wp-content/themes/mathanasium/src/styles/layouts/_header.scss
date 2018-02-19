@@ -35,6 +35,10 @@ header#masthead {
 		letter-spacing: 2px;
 		font-size: 1.6vw;
 		text-align: left;
+
+		@include respond-to( mobile ) {
+			width: 90%;
+		}
 	}
 
 	.custom-logo-link {

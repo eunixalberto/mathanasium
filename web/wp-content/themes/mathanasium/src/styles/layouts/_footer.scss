@@ -46,8 +46,9 @@ footer {
 				margin-bottom: 10px;
 
 				@include respond-to( mobile ) {
+					color: black;
 					display: block;
-					font-size: 2.5vw;
+					font-size: 2vw;
 					margin-bottom: 1px;
 					width: 100%;
 				}
@@ -57,9 +58,9 @@ footer {
 
 	}
 	.lastline {
+		clear: both;
 		display: block;
 		position: relative;
-		clear: both;
 		text-align: justify;
 		font-family: AvenirCondensed;
 		font-size: 16px;
@@ -69,6 +70,7 @@ footer {
 		line-height: $inputboxtxt;
 
 		@include respond-to( mobile ) {
+			color: black;
 			font-size: 3.5vw;
 			line-height: 3.5vw;
 		}
@@ -95,6 +97,19 @@ footer {
 			font-size: 2vw;
 			padding-right: 7vw;
 		}
+	}
+
+}
+
+@include respond-to( mobile ) {
+	.page-template-tpl-thankyou {
+		footer .col-md-12 .footercontainer {
+			position: relative;
+		}
+	}
+
+	.page-template-tpl-thankyou .entry-content p {
+		font-size: 4vw !important;
 	}
 
 }
