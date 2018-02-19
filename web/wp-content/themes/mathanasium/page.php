@@ -146,7 +146,14 @@ get_header(); ?>
 								<label for="zip"></label><input placeholder="Zip" id="zip" maxlength="20" name="zip" size="20" type="text" tabindex="9"/><br>
 
 								<label></label>
-								<select  id="00N60000002Rbqi" name="00N60000002Rbqi" title="Cash available to invest" tabindex="11" required>
+								<?php
+									// Field Name    Available_Capital
+									// API Name              Available_Capital__c
+									// Field ID                 00N32000003JYKo
+									// OLD key: 00N60000002Rbqi
+									//
+								?>
+								<select  id="00N32000003JYKo" name="00N32000003JYKo" title="Cash available to invest" tabindex="11" required>
 									<option value="" selected="selected">Available Capital</option>
 									<option value="$0 - $50,000">$0 - $50,000</option>
 									<option value="$50,000 - $150,000">$50,000 - $150,000</option>
