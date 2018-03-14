@@ -151,7 +151,6 @@ get_header(); ?>
 									// API Name              Available_Capital__c
 									// Field ID                 00N32000003JYKo
 									// OLD key: 00N60000002Rbqi
-									//
 								?>
 								<select  id="00N32000003JYKo" name="00N32000003JYKo" title="Cash available to invest" tabindex="11" required>
 									<option value="" selected="selected">Available Capital</option>
